@@ -136,7 +136,7 @@ int main() {
 	Spell* hpSpells[] = {
 		new Spell("Abracadabra!", 10),
 		new Spell("Hocus Pocus!", 5),
-		new Spell("Preparatus!", 7)
+		new Spell("Preparatus!", 7),
 	};
 
 	Spell* nostraSpells[] = {
@@ -149,9 +149,9 @@ int main() {
 		new Wizard("Nostradamus", nostraSpells, ArraySize<>(nostraSpells))
 	};
 
-	cout << "Wizards all arount the world: " << Wizard::getWizardsAllAroundTheWorld() << endl;
+	cout << "Wizards all around the world: " << Wizard::getWizardsAllAroundTheWorld() << endl;
 	Wizard* wizClone = new Wizard(*wizards[0]); cout << "Wizard summoned." << endl;
-	cout << "Wizards all arount the world: " << Wizard::getWizardsAllAroundTheWorld() << endl << endl;
+	cout << "Wizards all around the world: " << Wizard::getWizardsAllAroundTheWorld() << endl << endl;
 
 	for (int i = 0; i < ArraySize<>(wizards); i++) {
 		cout << *wizards[i];
